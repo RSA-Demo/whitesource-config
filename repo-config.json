@@ -4,11 +4,12 @@
     "configExternalURL": "",
     "enableLicenseViolations": "true",
     "displayLicenseViolations": "true",
+    "enableIaC": "true",
     "baseBranches": []
   },
   "scanSettingsSAST": {
-    "enableScan": false,
-    "scanPullRequests": false,
+    "enableScan": true,
+    "scanPullRequests": true,
     "incrementalScan": true,
     "baseBranches": [],
     "snippetSize": 10
@@ -28,7 +29,13 @@
   },
   "remediateSettings": {
     "workflowRules": {
-      "enabled": true
-    }
+      "enabled": false
+    },
+    "enableRenovate": true,
+    "extends": [
+      "config:base",
+      "github>whitesource/merge-confidence:beta",
+      "github>mend-toolkit/mend-examples//Repo-Integration/smart-merge"
+    ]
   }
 }
