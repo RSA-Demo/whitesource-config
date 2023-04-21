@@ -3,7 +3,7 @@
     "configMode": "AUTO",
     "configExternalURL": "",
     "enableLicenseViolations": "true",
-    "enableIaC": "true",
+    "displayLicenseViolations": "true",
     "baseBranches": []
   },
   "scanSettingsSAST": {
