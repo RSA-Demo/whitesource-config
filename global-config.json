@@ -1,4 +1,4 @@
 {
-  "repoConfigMode": "nowhitesourceFile",
+  "repoConfigMode": "createonboardingPR",
   "CVSSv3": true
 }
